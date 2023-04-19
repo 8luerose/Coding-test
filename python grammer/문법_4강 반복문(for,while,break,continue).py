@@ -19,7 +19,7 @@ for i in range(0,10,+2):    #9(10-1)까지가 범위
     print(i)
 print()
 
-for i in range(10,0,-2):    #range(10, 0) 하면 감소 안됨. 감소는 인자 3개
+for i in range(10,0,-2):    #range(10, 0) j하면 감소 안됨. 감소는 인자 3개
     print(i)
 print()
 

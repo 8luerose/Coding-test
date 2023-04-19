@@ -2,8 +2,8 @@
 2강 변수 입력과 연산자
 '''
 
-a = input() #input()함수는 문자형으로 인풋된다
-print(a)
+# a = input() #input()함수는 문자형으로 인풋된다
+# print(a)
 
 b = input("1개만 입력: ")
 print(b)
@@ -34,3 +34,9 @@ print(f-g)
 print(f//g) #몫 5//3 = 1
 print(f % g)    #나머지
 print(f**g) #거듭제곱
+
+
+h = 4.3
+i = 5
+j = h + i
+print(j)
