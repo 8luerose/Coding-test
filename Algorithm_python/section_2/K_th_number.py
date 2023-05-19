@@ -9,4 +9,3 @@ for i in range(1, T+1):
     sorted_list = sorted(arr[s-1 : e])
     K_th_number = sorted_list[k-1]
     print(f"#{i} {K_th_number}")
-    
