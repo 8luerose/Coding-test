@@ -21,8 +21,6 @@ while arr:
         print(arr[0])
         break						#혹은 arr.popleft()해서 위에 while문 거짓하여 정지
 
-        
-
 
 '''
 8 3
