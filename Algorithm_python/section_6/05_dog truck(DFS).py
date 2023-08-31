@@ -21,7 +21,7 @@ def DFS(L, sum, tsum):					# tsum은 포함할거냐 안할거냐 선택한것�
          if (sum > result):				# 지금 모두 더한 부분집합 더한값이, 그동안의 최댓값보다 크면 MAX인 result에 담는다
                result = sum
     else:
-         DFS(L + 1, sum + arr[L], tsum + arr[L])
+         DFS(L + 1, sum + arr[L], tsum + arr[L])	#tsum + arr[L]: 81, 58 .. 그동안 판단했던 것들
          DFS(L + 1, sum, tsum + arr[L]) 
          
 
