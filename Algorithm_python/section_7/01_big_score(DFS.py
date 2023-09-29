@@ -5,6 +5,10 @@
 3. 이때, 점수를 더한다면, 더한 점수를 누적한다
 4. 점수 더하지 않는다면 다음 가닥으로 넘어갈 것이다.
 5. 끝까지 도착했다면(if L == M), 누적된 점수를 출력한다
+6. 포인트
+	= else :
+			DFS(L + 1, sum + pv[L], time + pt[L])
+			DFS(L + 1, sum, time)
 '''
 def DFS(L, sum, time):					# L = 노드 번호. sum = 누적 점수. time = 누적 시간
 		global result
