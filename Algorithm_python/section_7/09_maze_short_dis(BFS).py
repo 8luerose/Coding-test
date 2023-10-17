@@ -46,6 +46,11 @@ if (dis[6][6] == 0):												# 도착지점에 도착하지 못했을 경우 
 else :
 	print(dis[6][6])
 
+# for j in range(7):												# 실제로 출력해보면 각 위치마다 루트에서 거리가 표기되어 있다
+# 	for i in range(7):
+# 		print(dis[j][i], end = ' ')
+# 	print()
+
 
 '''
 
