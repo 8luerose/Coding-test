@@ -40,8 +40,49 @@
 **	= board[i][j] = tmp[j]													# 맵에 넣어준다 -> 한줄 중에 하나씩
 
 '''
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
+
+def DFS(x, y):
+	global cnt
+	if (x == end_x and y == end_y):
+		cnt += 1
+	else:
+		for k in range(4):
+			next_x = x + dx[k]
+			next_y = y + dy[k]
+			if (0 <= next_x < n and 0 <= next_y < n and check[next_x][next_y] == 0 and board[next_x][next_y] > board[x][y]):
+				check[next_x][next_y] = 1
+				DFS(next_x, next_y)
+				check[next_x][next_y] = 0
 
 
+
+# if __name__ == "__main__":
+n = int(input())
+board = [[0] * n for _ in range(n)]
+check = [[0] * n for _ in range(n)]
+
+max = -2147000000
+min = 2147000000
+
+for i in range(n):
+	tmp = list(map(int, input().split()))									# 한 줄씩 받아주고
+	for j in range(n):														# 한 줄 중 하나씩
+		if (tmp[j] > max):
+			max = tmp[j]
+			end_x = i
+			end_y = j
+		if (tmp[j] < min):
+			min = tmp[j]
+			start_x = i
+			start_y = j
+		board[i][j] = tmp[j]												# 맵에 넣어준다 -> 한줄 중에 하나씩
+
+cnt = 0
+check[start_x][start_y] = 1													# DFS() 전에 시작 지점 체크하고 시작한다
+DFS(start_x, start_y)
+print(cnt)
 
 '''
 5
