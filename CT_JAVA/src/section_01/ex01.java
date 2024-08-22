@@ -36,3 +36,11 @@ class ex01
  * c
  * => 2
  */
+
+
+/** 배울점
+ * 1. str = str.toUpperCase() // String.toUpperCase(): 해당(str)문자열 전체 대문자로 변환
+ * 2. 문자 = Character.toUpperCase(문자) // Character.toUpperCase(): Character에 있는.대문자로 변환함수(해당 문자) -> 해당 문자를 대문자로 변환
+ * 3. str.charAt(i) // String.charAt(인덱스): 문자열(str)의 i번째 문자 가르킴 == str[i]
+ * 4. for (char x : str.toCharArray()) // String.toCharArray(): for-each에서는 String을 '문자열 배열'로 변환해야 char x로 하나씩 꺼낼 수 있음
+ */

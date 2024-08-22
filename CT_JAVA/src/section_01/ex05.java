@@ -44,6 +44,7 @@ public class ex05 {
 /* 해설
 1. String을 nextLine()으로 받고 -> toCharArray()로 char []화 시킨다
 2. Character.isAlphabetic(char[i)를 사용해서 알파벳인지 확인한다
-3. char [] 교환해주고 -> char []를 다시 String.valueOf(char[])로 문자열 반환한다
-4. String answer = ""에다가 대입 -> return (answer)
+3. char [] 교환해주고 -> char []를 다시 String.valueOf(char [] arr)로 문자열 반환한다
+4. String answer = 에다가 대입 -> return (answer)
+5. if - else if - else: lt, rt가 알파벳이 아닌 경우, 첨 i++, 끝 j-- -> 각각 알파벳 위치에서 멈춰있고, 둘 다 알파벳일 때 교환
  */

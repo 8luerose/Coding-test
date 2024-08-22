@@ -60,3 +60,13 @@ class ex03
  * it is time to study
  * -> study
  */
+
+
+/** 배울점
+ * 1. String.split(" "): 공백을 기준으로 문자열을 나눠지고, String 총 배열이 반환됨
+ * 2. String.indexOf(' '): 문자열에서 ' '의 인덱스를 반환 -> 없으면 -1 반환(예, 맨 마지막 단어)
+ * 3. String.substring(인덱스, 인덱스): 인덱스부터 ~ 인덱스 '전'까지 문자열 반환
+ * 4. String.substring(인덱스): 인덱스부터 '끝'까지 문자열 반환
+ * 5. Integer.MIN_VALUE: int의 최솟값 반환
+ * 6. String.indexOf(' ') 로 찾을 시 -> 맨 마지막 단어는 공백이 없음으로, 맨 마지막은 -1 반환 -> 예외이므로 따로 처리해줘야함
+ */

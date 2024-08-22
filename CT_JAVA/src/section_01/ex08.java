@@ -20,7 +20,7 @@ class ex08{
 }
 
 
-/** 입출력
+/** 회문을 검사할 때 알파벳만 가지고 회문을 검사 + 대소문자 구분 없이 검사
  * found7, time: study; Yduts; emit, 7Dnuof
  * => YES
  */
@@ -29,7 +29,9 @@ class ex08{
 /*
     핵심
 
-    1. 정규식을 사용해서 문자열을 가공함 -> 문자열.toUpperCas().replace'All'("[^A-Z]", "")
-    2. StringBuilder().reverse() 객체를 만들어서 뒤집은 문자열을 만듦
+    1. 정규식을 사용해서 문자열을 가공함 -> 문자열.toUpperCas().replaceAll("[^A-Z]", "") == A-Z가 '아니면 ^'- > 빈문자""로 변경하라
+    2. StringBuilder(문자열).reverse().toString() 스트링빌더 객체를 만들어서 -> 뒤집은 문자열을 만듦
     3. 두 문자열을 비교해서 문자열.equals(문자열)이면 "YES", 다르면 "NO" 반환
+    4. 문자열.equals(문자열)은 대소문자 구분해서 비교, 문자열.equalsIgnoreCase(문자열)은 대소문자 구분 없이 비교
+    5. 보통 이런 문제의 경우, toUpperCase()로 통일시키고 비교하는 것이 좋음
  */

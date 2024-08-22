@@ -50,4 +50,30 @@ class ex04 {
  * good
  * time
  * big
+ *
+ * =>
+ * doog
+ * emit
+ * gib
+ */
+
+/** 배울점
+ * 1. 문자열 3개 입력: nextInt() -> String [] str = new String[n]으로 배열 인스턴스 생성 -> for() - str[i] = sc.next() 공백까지
+ * 2. ArrayList<T> answer = new ArrayList<>(): ArrayList 인스턴스 생성
+ * 3. ArrayList<String> answer: ArrayList에 String 타입으로 선언
+ * 4. ArrayList.add(값): ArrayList에 값 추가
+ *      ArrayList.get(인덱스): ArrayList에서 인덱스에 해당하는 '값' 반환
+ *      ArrayList.size(): ArrayList의 크기 반환
+ *      ArrayList.clear(): ArrayList의 모든 요소 삭제
+ *      ArrayList.remove(인덱스): ArrayList에서 '인덱스에 해당'하는 요소 삭제
+ *      ArrayList.contains(값): ArrayList에 '값이 있는지' 확인
+ *      ArrayList.indexOf(값): ArrayList에서 '첫번째 값의 인덱스' 반환
+ *      ArrayList.isEmpty(): ArrayList가 비어있는지 확인
+ *      ArrayList.set(인덱스, 값): ArrayList에서 '인덱스'에 해당하는 요소를 '값'으로 변경
+ *      ArrayList.toArray(): ArrayList를 배열로 변환
+ *      ArrayList.toString(): ArrayList를 문자열로 변환
+ * 5. String을 뒤집는 방법: StringBuilder(String 값).reverse.toString()
+ * 6. char []을 뒤집는 방법: char [] arr = String.toCharArray() -> lt = 0, rt = arr.length - 1 -> while(lt < rt) -> arr교환
+ * 7. String.valueOf(char [] arr): (char [] arr)를 String으로 '변환'
+ * 8. String.toCharArray(): String을 char []로 변환
  */

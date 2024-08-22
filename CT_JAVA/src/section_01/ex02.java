@@ -32,3 +32,11 @@ class ex02
  * StuDY
  * => sTUdy
  */
+
+
+/** 배울점
+ * 1. String.toCharArray(): for - each 에서는 String 객체를 '문자열 배열'로 변환해야 char x로 하나씩 꺼낼 수 있음
+ * 2. Character.isLowerCase(문자): x가 소문자인지 확인하는 함수
+ * 3. Character.toUpperCase(문자): x를 대문자로 변환하는 함수
+ * 4. Character.toLowerCase(문자): x를 소문자로 변환하는 함수
+ */

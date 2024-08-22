@@ -6,7 +6,7 @@ class ex06 {
         String answer = "";
         for (int i = 0; i < str.length(); i++) {
             if (str.indexOf(str.charAt(i)) == i)    // indexOf()는 '가장 첫번째 발견'되는 문자의 인덱스를 반환
-                answer += str.charAt(i);            // str.charAt(i)는 문자열을 문자로 변환 -> '베열처럼 charAt(i) 괄호'에 담는다
+                answer += str.charAt(i);            // str.charAt(i)는 문자열은 str[i]와 같음 -> 문자열 += 로 문자 추가
         }
         return (answer);
     }
