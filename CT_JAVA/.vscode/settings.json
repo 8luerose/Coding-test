@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "out/production",  // 인텔리제이와 동일한 구조로 설정
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.dependency.packagePresentation": "flat",
+    "java.dependency.showMembers": true
+}
