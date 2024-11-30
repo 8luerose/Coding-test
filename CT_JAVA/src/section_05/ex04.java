@@ -10,7 +10,7 @@ public class ex04 {
             else {
                 int rt = stack.pop();
                 int lt = stack.pop();
-                System.out.println("lt: " + lt + " rt: " + rt);
+                // System.out.println("lt: " + lt + " rt: " + rt);
                 if (x == '+') stack.push(lt + rt);
                 else if (x == '-') stack.push(lt - rt);
                 else if (x == '*') stack.push(lt * rt);
