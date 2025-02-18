@@ -1,7 +1,7 @@
-package section_07;
+package section_08;
 import java.util.*;
 
-public class ex15 {
+public class ex03 {
 	static int N, M;
 	static int answer = Integer.MIN_VALUE;
 	public void DFS (int L, int sum, int time, int[] scoreArr, int[] timeArr) {
@@ -16,7 +16,7 @@ public class ex15 {
 
 	}
 	public static void main(String[] args) {
-		ex15 T = new ex15();
+		ex03 T = new ex03();
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
 		M = sc.nextInt();

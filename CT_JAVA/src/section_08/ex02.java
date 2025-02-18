@@ -1,7 +1,7 @@
-package section_07;
+package section_08;
 import java.util.*;
 
-public class ex14 {
+public class ex02 {
 	static int C, N;
 	static int answer = Integer.MIN_VALUE;
 
@@ -16,7 +16,7 @@ public class ex14 {
 		}
 	}
 	public static void main(String[] args) {
-		ex14 T = new ex14();
+		ex02 T = new ex02();
 		Scanner sc = new Scanner(System.in);
 		C = sc.nextInt();
 		N = sc.nextInt();

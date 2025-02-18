@@ -1,7 +1,7 @@
-package section_07;
+package section_08;
 import java.util.*;
 
-public class ex13 {
+public class ex01 {
 	static String answer = "NO";
 	static int N, arrSum = 0;
 	static boolean flag = false;
@@ -22,7 +22,7 @@ public class ex13 {
 	}
 
 	public static void main(String[] args) {
-		ex13 T = new ex13();
+		ex01 T = new ex01();
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
 		int[] arr = new int[N];
