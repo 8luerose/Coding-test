@@ -1,6 +1,6 @@
 package section_08;
 import java.util.*;
-class Main{
+class ex08 {
 	static int[] b, p, ch;
 	static int n, f;
 	boolean flag=false;
@@ -32,7 +32,7 @@ class Main{
 	}
 
 	public static void main(String[] args){
-		Main T = new Main();
+		ex08 T = new ex08();
 		Scanner sc = new Scanner(System.in);
 		n=sc.nextInt();
 		f=sc.nextInt();
