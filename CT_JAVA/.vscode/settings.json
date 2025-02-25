@@ -8,5 +8,6 @@
     "java.configuration.updateBuildConfiguration": "interactive",
     "java.dependency.syncWithFolderExplorer": true,
     "java.dependency.packagePresentation": "flat",
-    "java.dependency.showMembers": true
+	"java.dependency.showMembers": true,
+	"java.debug.settings.onBuildFailureProceed": true
 }
