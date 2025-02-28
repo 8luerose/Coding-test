@@ -68,6 +68,11 @@ public class ex01 {
      * 각 Body 객체 쌍을 compareTo로 비교하며 정렬
      * 결과: [183 65, 181 60, 180 70, 172 67, 170 72]
 
+2. ** CompareTo() 암기 **
+	- 그냥 외워라
+	- this먼저 나오면 오름차순: this - other == 오름차순 -> return this.height - other.height
+	- other먼저 나오면 내림차순: other - this == 내림차순 -> return other.height - this.height
+
 2. 그리디 선택의 구체적 적용
    - 이 문제에서 그리디는 "현재 시점에서 최적의 선택"을 반복:
      * 키 내림차순 정렬 후 몸무게 최대값을 갱신하며 선발
