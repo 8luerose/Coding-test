@@ -19,3 +19,7 @@ public class ex01 {
 		sc.close();
 	}
 }
+/** 입출력
+7
+=> 21
+*/
