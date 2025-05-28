@@ -2,17 +2,17 @@ package section_09;
 import java.util.*;
 
 // 간선 정보를 저장하는 클래스, 비용(cost) 기준으로 정렬 가능하도록 Comparable 구현
-class Edge implements Comparable<Edge> {
+class EdgeA implements Comparable<EdgeA> {
     public int v1; // 정점 1
     public int v2; // 정점 2
     public int cost; // 두 정점을 잇는 간선의 비용
-    Edge(int v1, int v2, int cost) {
+    EdgeA(int v1, int v2, int cost) {
         this.v1 = v1;
         this.v2 = v2;
         this.cost = cost;
     }
     @Override
-    public int compareTo(Edge other) {
+    public int compareTo(EdgeA other) {
         return (this.cost - other.cost); // 비용(cost)을 기준으로 오름차순 정렬
     }
 }
@@ -39,7 +39,7 @@ public class ex07 {
         int M = sc.nextInt(); // 간선(도로)의 개수
         
         unf = new int[N + 1]; // 1번 정점부터 사용하기 위해 N+1 크기로 배열 생성
-        ArrayList<Edge> arr = new ArrayList<>(); // 모든 간선 정보를 저장할 리스트
+        ArrayList<EdgeA> arr = new ArrayList<>(); // 모든 간선 정보를 저장할 리스트
         
         // Union-Find 배열 초기화: 각 정점은 자기 자신을 대표로 가짐
         for (int i = 1; i <= N; i++) unf[i] = i;
@@ -49,14 +49,14 @@ public class ex07 {
             int a = sc.nextInt();
             int b = sc.nextInt();
             int c = sc.nextInt();
-            arr.add(new Edge(a, b, c));
+            arr.add(new EdgeA(a, b, c));
         }
         
         int costSum = 0; // 최소 총비용을 저장할 변수
         Collections.sort(arr); // 크루스칼 알고리즘의 첫 단계: 모든 간선을 비용 기준으로 오름차순 정렬
         
         // 정렬된 간선을 순회하며 최소 스패닝 트리 구성
-        for (Edge object : arr) {
+        for (EdgeA object : arr) {
             int fv1 = Find(object.v1); // 간선의 한쪽 끝 정점(v1)이 속한 집합의 대표
             int fv2 = Find(object.v2); // 다른 쪽 끝 정점(v2)이 속한 집합의 대표
             
